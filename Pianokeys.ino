@@ -3,6 +3,8 @@ int TOUCH_Pin_2_VALUE;
 int TOUCH_Pin_3_VALUE; 
 int TOUCH_Pin_4_VALUE; 
 int TOUCH_Pin_5_VALUE;
+#define Buzzer 26 
+const int VALUE_THRESHOLD = 30
 
 void setup(){
   
