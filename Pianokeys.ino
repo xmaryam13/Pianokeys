@@ -66,11 +66,21 @@ void loop() {
     }
   }
   if(TOUCH_Pin_Value_4 < VALUE_THRESHOLD){
-    for(int i=0; i<8; i++){
+    for(int i=0; i<12; i++){
       digitalWrite(Buzzer, HIGH);
       delay(25);
       digitalWrite(Buzzer, LOW);
       delay(25);
+    }
+  }  
+  if(TOUCH_Pin_Value_5 < VALUE_THRESHOLD){
+    for(int i=0; i<15; i++){
+      digitalWrite(Buzzer, HIGH);
+      delay(25);
+      digitalWrite(Buzzer, LOW);
+      delay(25);
+    }
+  }  
   else{
     digitalWrite(2, LOW);
   }
