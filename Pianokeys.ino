@@ -4,7 +4,7 @@ int TOUCH_Pin_3_VALUE;
 int TOUCH_Pin_4_VALUE; 
 int TOUCH_Pin_5_VALUE;
 #define Buzzer 26 
-const int VALUE_THRESHOLD = 30
+const int VALUE_THRESHOLD = 30;
 
 void setup(){
   
@@ -24,24 +24,24 @@ void loop() {
   TOUCH_Pin_4_VALUE = touchRead(T8); 
   TOUCH_Pin_5_VALUE = touchRead(T9);
 
-  Serial.print("TOUCH_Pin_Value 1:");
-  Serial.print(TOUCH_Pin_1_Value);
+  Serial.print("TOUCH_Pin_VALUE 1:");
+  Serial.print(TOUCH_Pin_1_VALUJE);
   Serial.print("  ");
-  Serial.print("TOUCH_Pin_Value 2:");
-  Serial.print(TOUCH_Pin_2_Value);
+  Serial.print("TOUCH_Pin_VALUE 2:");
+  Serial.print(TOUCH_Pin_2_VALUE);
   Serial.print("  ");
-  Serial.print("TOUCH_Pin_Value 3:");
-  Serial.print(TOUCH_Pin_3_Value);
+  Serial.print("TOUCH_Pin_VALUE 3:");
+  Serial.print(TOUCH_Pin_3_VALUE);
   Serial.println(" ");
-  Serial.print("TOUCH_Pin_Value 4:");
-  Serial.print(TOUCH_Pin_4_Value);
+  Serial.print("TOUCH_Pin_VALUE 4:");
+  Serial.print(TOUCH_Pin_4_VALUE);
   Serial.println(" ");
-  Serial.print("TOUCH_Pin_Value 5:");
-  Serial.print(TOUCH_Pin_5_Value);
+  Serial.print("TOUCH_Pin_VALUE 5:");
+  Serial.print(TOUCH_Pin_5_VALUE);
   Serial.println(" ");
   delay(500);
   
-  if(TOUCH_Pin_Value_1 < VALUE_THRESHOLD){
+  if(TOUCH_Pin_1_VALUE < VALUE_THRESHOLD){
     for(int i=0; i<2; i++){
       digitalWrite(Buzzer, HIGH);
       delay(100);
@@ -49,7 +49,7 @@ void loop() {
       delay(100);
     }
   }
-  if(TOUCH_Pin_Value_2 < VALUE_THRESHOLD){
+  if(TOUCH_Pin_2_VALUE < VALUE_THRESHOLD){
      for(int i=0; i<5; i++){
       digitalWrite(Buzzer, HIGH);
       delay(50);
@@ -57,7 +57,7 @@ void loop() {
       delay(50);
     }
   }
-  if(TOUCH_Pin_Value_3 < VALUE_THRESHOLD){
+  if(TOUCH_Pin_3_VALUE < VALUE_THRESHOLD){
     for(int i=0; i<8; i++){
       digitalWrite(Buzzer, HIGH);
       delay(25);
@@ -65,7 +65,7 @@ void loop() {
       delay(25);
     }
   }
-  if(TOUCH_Pin_Value_4 < VALUE_THRESHOLD){
+  if(TOUCH_Pin_4_VALUE < VALUE_THRESHOLD){
     for(int i=0; i<12; i++){
       digitalWrite(Buzzer, HIGH);
       delay(25);
@@ -73,7 +73,7 @@ void loop() {
       delay(25);
     }
   }  
-  if(TOUCH_Pin_Value_5 < VALUE_THRESHOLD){
+  if(TOUCH_Pin_5_VALUE < VALUE_THRESHOLD){
     for(int i=0; i<15; i++){
       digitalWrite(Buzzer, HIGH);
       delay(25);
