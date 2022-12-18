@@ -25,7 +25,7 @@ void loop() {
   TOUCH_Pin_5_VALUE = touchRead(T9);
 
   Serial.print("TOUCH_Pin_VALUE 1:");
-  Serial.print(TOUCH_Pin_1_VALUJE);
+  Serial.print(TOUCH_Pin_1_VALUE);
   Serial.print("  ");
   Serial.print("TOUCH_Pin_VALUE 2:");
   Serial.print(TOUCH_Pin_2_VALUE);
